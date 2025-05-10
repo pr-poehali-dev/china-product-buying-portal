@@ -63,11 +63,11 @@ const config = {
           accent: "hsl(var(--sidebar-accent))",
           "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
         },
+        // Добавляем тематические цвета для сайта о выкупе товара из Китая
         china: {
           red: "#ea384c",
           darkBlue: "#1A1F2C",
-          grey: "#8E9196",
-          lightGrey: "#F1F1F1",
+          lightGrey: "#f7f8f9",
         },
       },
       borderRadius: {
@@ -85,22 +85,19 @@ const config = {
           to: { height: "0" },
         },
         "float-up": {
-          "0%": { transform: "translateY(10px)", opacity: "0" },
+          "0%": { transform: "translateY(20px)", opacity: "0" },
           "100%": { transform: "translateY(0)", opacity: "1" },
         },
         "scale-in": {
           "0%": { transform: "scale(0.95)", opacity: "0" },
           "100%": { transform: "scale(1)", opacity: "1" },
-        },
+        }
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "float-up": "float-up 0.5s ease-out",
-        "scale-in": "scale-in 0.3s ease-out",
-      },
-      fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
+        "float-up": "float-up 0.5s ease-out forwards",
+        "scale-in": "scale-in 0.5s ease-out forwards"
       },
     },
   },
